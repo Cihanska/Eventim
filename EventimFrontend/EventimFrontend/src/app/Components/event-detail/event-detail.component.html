@@ -1,0 +1,19 @@
+<!-- event-detail.component.html -->
+<div *ngIf="event" class="event-details">
+  <h2>{{ event.eventName }} Details</h2>
+  <ul>
+    <li><strong>ID:</strong> {{ event.id }}</li>
+    <li><strong>Event Name:</strong> {{ event.eventName }}</li>
+    <li><strong>Date:</strong> {{ event.date | date: 'yyyy-MM-dd' }}</li>
+    <li><strong>Ticket Amount:</strong> {{freeTicketsAmount}}/{{ event.ticketAmount }}</li>
+  </ul>
+
+  <div class="ticket-purchase">
+    <label for="ticketAmount">Anzahl der Tickets:</label>
+    <input [(ngModel)]="ticketAmount" (ngModelChange)="onTicketAmountChange($event)" type="number" max="{{freeTicketsAmount}}" min="0"/>
+
+    <button (click)="buyTickets()">Tickets kaufen</button>
+  </div>
+
+  <button routerLink="/events" class="back-button">Zurück zu den Events</button>
+</div>

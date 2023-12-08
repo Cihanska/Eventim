@@ -1,0 +1,30 @@
+<body>
+
+
+<header>
+  <h1>Veranstaltungs- und Ticketanwendung</h1>
+
+
+  <div class="box">
+
+    <button routerLink="/next">Startseite</button>
+    <button routerLink="/events">Übersicht Events</button>
+    <button routerLink="/tickets">Übersicht Tickets</button>
+    <button routerLink="/events/new">Event hinzufügen</button>
+    <!--    <button routerLink="/tickets/new">Ticket verwalten</button>-->
+  </div>
+
+
+  <div>
+    <!-- Hier werden alle Events angezeigt -->
+    <router-outlet></router-outlet>
+  </div>
+</header>
+
+
+<footer>
+  &copy; 2023 Veranstaltungs- und Ticketanwendung
+</footer>
+
+</body>
+
