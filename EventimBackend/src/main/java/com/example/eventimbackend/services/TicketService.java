@@ -1,9 +1,9 @@
-package Services;
+package com.example.eventimbackend.services;
 
-import Entities.Event;
-import Entities.Ticket;
-import Repositories.EventRepository;
-import Repositories.TicketRepository;
+import com.example.eventimbackend.entities.Event;
+import com.example.eventimbackend.entities.Ticket;
+import com.example.eventimbackend.repositories.EventRepository;
+import com.example.eventimbackend.repositories.TicketRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

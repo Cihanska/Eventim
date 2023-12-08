@@ -1,4 +1,4 @@
-package Models;
+package com.example.eventimbackend.models;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
