@@ -1,0 +1,34 @@
+<!-- event-list.component.html -->
+
+<h2>Event List</h2>
+
+<input type="text" placeholder="Suche nach Event" [(ngModel)]="searchTerm" >
+
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Event Name</th>
+    <th>Date</th>
+    <th>Ticket Amount</th>
+    <th>Actions</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let event of filteredEvents">
+    <td>{{ event.id }}</td>
+    <td>{{ event.eventName }}</td>
+    <td>{{ event.date | date: 'yyyy-MM-dd' }}</td>
+    <td>{{ event.ticketAmount }}</td>
+    <td>
+      <button routerLink="/events/{{ event.id }}">Details anzeigen</button>
+      <button routerLink="/events/{{ event.id }}/tickets">Tickets verwalten</button>
+
+    </td>
+    <td>
+      <button (click)="deleteEvent(event.id)">Löschen</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

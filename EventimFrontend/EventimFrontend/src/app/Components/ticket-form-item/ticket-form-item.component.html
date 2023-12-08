@@ -1,0 +1,11 @@
+<!-- ticket-form.component.html -->
+
+<form [formGroup]="ticketForm" (ngSubmit)="saveTicket()">
+  <label for="price">Ticket Price:</label>
+  <input formControlName="price" />
+
+  <label for="isSold">Already sold:</label>
+  <input formControlName="isSold" type="checkbox" />
+
+  <button type="submit" [disabled]="ticketForm.invalid">Save Ticket</button>
+</form>
