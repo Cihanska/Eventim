@@ -40,7 +40,7 @@ Durch den entsprechenden Button kann ein Event entfernt werden.
 
 ##Anwendungsnutzung
 um die Anwendung lokal auszuführen:
-´´´
+```
 Backend: mvn spring-boot:run
 Frontend: npm run start
 ```
