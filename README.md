@@ -34,6 +34,10 @@ mvn spring-boot:run
 ```
 npm run start
 ```
+### Abhängigkeiten
+1. Lombok
+2. H2 Database
+3. Spring Data JPA
 
 ### Anwendung starten
 
@@ -45,12 +49,14 @@ npm run start
 
 **Frontend (Angular)**
 1. Navigieren zum Frontend-Verzeichnis.
-2. Installieren der benötigten Pakete.
-3. Starten der Frontend-Anwendung.
+2. Installieren der benötigten Pakete:
+   - ``` npm install```   
+4. Starten der Frontend-Anwendung.
+   - ``` ng serve ``` 
 
 ## Technologien
 - **Backend:** Java, Spring Boot
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** Angular, HTML, CSS, JavaScript
 
 ## Hinweise
 - Die Ticketverkäufe sind absichtlich anonymisiert.
