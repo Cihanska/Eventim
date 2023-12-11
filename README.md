@@ -26,10 +26,10 @@ Dieses Projekt wurde als Teil des Bootcamps entwickelt und dient der Verwaltung 
 Um die Anwendung lokal auszuführen:
 
 ### Backend
-- `mvn spring-boot:run`
+```mvn spring-boot:run```
 
 ### Frontend
-- `npm run start`
+```npm run start```
 
 ### Anwendung starten
 
