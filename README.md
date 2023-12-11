@@ -28,6 +28,8 @@ Eventlöschung: Durch den entsprechenden Button kann ein Event entfernt werden.
 
 Anwendungsnutzung
 Um die Anwendung lokal auszuführen:
+Backend: mvn spring-boot:run 
+Frontend: npm run start
 
 Backend (Java)
 Klonen des Repositorys.
