@@ -1,7 +1,7 @@
-package Repositories;
+package com.example.eventimbackend.repositories;
 
 
-import Entities.Event;
+import com.example.eventimbackend.entities.Event;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

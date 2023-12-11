@@ -1,4 +1,4 @@
-package CORS;
+package com.example.eventimbackend.cors;
 
 
 import org.springframework.context.annotation.Configuration;

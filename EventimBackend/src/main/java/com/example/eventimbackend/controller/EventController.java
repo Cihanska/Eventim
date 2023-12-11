@@ -1,8 +1,8 @@
-package Controller;
+package com.example.eventimbackend.controller;
 
-import Entities.Event;
-import Models.NewEventRequest;
-import Services.EventService;
+import com.example.eventimbackend.entities.Event;
+import com.example.eventimbackend.models.NewEventRequest;
+import com.example.eventimbackend.services.EventService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

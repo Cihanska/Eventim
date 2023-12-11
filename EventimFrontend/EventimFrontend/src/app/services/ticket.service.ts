@@ -9,7 +9,7 @@ import {Event} from "../models/event";
 })
 export class TicketService {
 
-  apiUrl = "http://localhost:4200/ticket"
+  apiUrl = "http://localhost:8080/ticket"
 
   constructor(private httpClient: HttpClient) { }
 

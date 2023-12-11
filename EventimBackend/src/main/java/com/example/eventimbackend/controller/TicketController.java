@@ -1,8 +1,8 @@
-package Controller;
+package com.example.eventimbackend.controller;
 
-import Entities.Event;
-import Entities.Ticket;
-import Services.TicketService;
+import com.example.eventimbackend.entities.Event;
+import com.example.eventimbackend.entities.Ticket;
+import com.example.eventimbackend.services.TicketService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

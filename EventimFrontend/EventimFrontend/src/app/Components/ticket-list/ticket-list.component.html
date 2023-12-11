@@ -9,10 +9,10 @@
     <thead>
     <tr>
       <th>ID</th>
-      <th>Price</th>
-      <th>Is Sold</th>
-      <th>Event</th>
-      <th>Actions</th>
+      <th>Preis</th>
+      <th>Verkauf</th>
+      <th>Veranstaltung</th>
+      <th>Bearbeiten</th>
     </tr>
     </thead>
     <tbody>
@@ -22,8 +22,8 @@
       <td>{{ ticket.isSold ? 'Yes' : 'No' }}</td>
       <td>{{ ticket.event.eventName }}</td>
       <td>
-        <button class="details-button" [routerLink]="['/tickets', ticket.id]">Details</button>
-        <button class="delete-button" (click)="deleteTicket(ticket.id)">Delete</button>
+        <button class="details-button" [routerLink]="['/tickets', ticket.id]">Ticket Details</button>
+        <button class="delete-button" (click)="deleteTicket(ticket.id)">Löschen</button>
       </td>
     </tr>
     </tbody>
