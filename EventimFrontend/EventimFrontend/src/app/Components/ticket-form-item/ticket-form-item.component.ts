@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Ticket} from "../../models/ticket";
-import {EventService} from "../../services/event.service";
 import {TicketService} from "../../services/ticket.service";
 import {Input} from "@angular/core";
 
@@ -23,10 +22,10 @@ export class TicketFormItemComponent implements OnInit {
 
 
     this.ticketForm = this.fb.group({
-      id: [null], // Füge die id hinzu
+      id: [null],
       price: [null, [Validators.required, Validators.min(0)]],
-      isSold: [false, Validators.required], // Standardwert für isSold setzen
-      event: [null], // Füge event hinzu (wenn es in deinem Formular verwendet wird)
+      isSold: [false, Validators.required],
+      event: [null],
     });
 
 

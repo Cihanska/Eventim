@@ -1,7 +1,7 @@
 <div *ngIf="nextEvent" class="next-event-container">
   <h2>Nächstes Event</h2>
   <p><strong>ID:</strong> {{ nextEvent.id }}</p>
-  <p><strong>Event Name:</strong> {{ nextEvent!.eventName }}</p>
-  <p><strong>Date:</strong> {{ nextEvent!.date | date: 'yyyy-MM-dd' }}</p>
+  <p><strong>Veranstaltung:</strong> {{ nextEvent!.eventName }}</p>
+  <p><strong>Datum:</strong> {{ nextEvent!.date | date: 'yyyy-MM-dd' }}</p>
   <button routerLink="/events/{{ nextEvent.id }}">Details anzeigen</button>
 </div>

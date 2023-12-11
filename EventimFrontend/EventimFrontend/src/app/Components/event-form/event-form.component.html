@@ -1,14 +1,15 @@
 <!-- event-form.component.html -->
 
 <form [formGroup]="eventForm" (ngSubmit)="saveEvent()">
-  <label for="eventName">Event Name:</label>
+  <label for="eventName">Name der Veranstaltung: </label>
   <input formControlName="eventName" />
 
-  <label for="date">Date:</label>
+  <label for="date">Datum</label>
   <input formControlName="date" type="date" />
 
-  <label for="ticketAmount">Ticket Amount:</label>
+
+  <label for="ticketAmount">Anzahl der Tickets:</label>
   <input formControlName="ticketAmount" type="number" />
 
-  <button type="submit" [disabled]="eventForm.invalid">Save Event</button>
+  <button type="submit" [disabled]="eventForm.invalid">Speichern</button>
 </form>

@@ -3,9 +3,9 @@
   <h2>{{ event.eventName }} Details</h2>
   <ul>
     <li><strong>ID:</strong> {{ event.id }}</li>
-    <li><strong>Event Name:</strong> {{ event.eventName }}</li>
-    <li><strong>Date:</strong> {{ event.date | date: 'yyyy-MM-dd' }}</li>
-    <li><strong>Ticket Amount:</strong> {{freeTicketsAmount}}/{{ event.ticketAmount }}</li>
+    <li><strong>Name der Veranstaltung:</strong> {{ event.eventName }}</li>
+    <li><strong>Datum:</strong> {{ event.date | date: 'yyyy-MM-dd' }}</li>
+    <li><strong>Anzahl der Tickets:</strong> {{freeTicketsAmount}}/{{ event.ticketAmount }}</li>
   </ul>
 
   <div class="ticket-purchase">
